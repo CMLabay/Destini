@@ -16,22 +16,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="X0o-Gr-Zxx" userLabel="Background">
-                                <rect key="frame" x="0.0" y="-897" width="414" height="1793"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nZG-41-Qer">
                                 <rect key="frame" x="20" y="44" width="374" height="818"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StoryText" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8i-kZ-sCN">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="598"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="shadowColor" red="0.25068891049999997" green="0.25073841209999997" blue="0.25068578120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="shadowOffset" width="1" height="5"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNJ-lu-4w5">
                                         <rect key="frame" x="0.0" y="608" width="374" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="onR-oH-iMj"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                         <state key="normal" title="Button1" backgroundImage="choice1Background">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -44,6 +47,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="Eu9-O6-Kxy"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                         <state key="normal" title="Button2" backgroundImage="choice2Background">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="titleShadowColor" red="0.44917285439999999" green="0.80774134399999997" blue="0.99458676580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -58,11 +62,12 @@
                         <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="nZG-41-Qer" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5fg-Do-jT1"/>
-                            <constraint firstItem="X0o-Gr-Zxx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9RY-g1-372"/>
+                            <constraint firstItem="X0o-Gr-Zxx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9RY-g1-372"/>
                             <constraint firstItem="nZG-41-Qer" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="AwW-XX-UFL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nZG-41-Qer" secondAttribute="bottom" id="LIK-yr-XVV"/>
-                            <constraint firstItem="X0o-Gr-Zxx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gcA-Bp-mbF"/>
+                            <constraint firstItem="X0o-Gr-Zxx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="gcA-Bp-mbF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nZG-41-Qer" secondAttribute="trailing" id="jcf-1J-dOV"/>
+                            <constraint firstItem="X0o-Gr-Zxx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yUY-CH-bad"/>
                             <constraint firstAttribute="bottom" secondItem="X0o-Gr-Zxx" secondAttribute="bottom" id="ziZ-Wi-LmJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
