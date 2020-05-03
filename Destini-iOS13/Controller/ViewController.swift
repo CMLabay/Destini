@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var choice2: UIButton!
+    @IBOutlet weak var choice1: UIButton!
+    @IBOutlet weak var storyLabel: UILabel!
+    @IBAction func buttonClick(_ sender: UIButton) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
