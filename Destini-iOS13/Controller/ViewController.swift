@@ -24,16 +24,20 @@ class ViewController: UIViewController {
         let currSel = sender.currentTitle!
         let dest = storyBrain.setDestination(currSel)
         choice1.setTitle(storyBrain.getNextChoice1(dest), for: .normal)
+        choice1.titleLabel?.numberOfLines = 0
+        choice1.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
         choice2.setTitle(storyBrain.getNextChoice2(dest), for: .normal)
+        choice2.titleLabel?.numberOfLines = 0
+        choice2.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
         storyLabel.text = storyBrain.getNextStory(dest)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        storyLabel.text = story0
-        choice1.setTitle(opt1, for: .normal)
-        choice2.setTitle(opt2, for: .normal)
+        storyLabel.text = storyBrain.getNextStory(0)
+        choice1.setTitle(storyBrain.getNextChoice1(0), for: .normal)
+        choice2.setTitle(storyBrain.getNextChoice2(0), for: .normal)
     }
 
 
